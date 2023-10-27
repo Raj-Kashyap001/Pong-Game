@@ -8,7 +8,7 @@
   <a href="https://raj-kashyap001.github.io/Pong-Game/"><strong>Play the Game</strong></a>
 </p>
 
-![Pong Game Screenshot](./img/screenshot.png)
+![Pong Game Screenshot](/img/screenshot.png)
 
 ## Table of Contents
 
@@ -53,7 +53,7 @@ How to Play
 Pong is a two-player game, where you control one paddle and the computer controls the other. The objective is simple: score points by making the ball pass your opponent's paddle.
 
 Controls
-Use the W and S keys to move your paddle up and down.
+Use the ArrowUp and ArrowDown keys to move your paddle up and down.
 On mobile devices, you can use on-screen touch controls to move your paddle.
 Use the Pause button to pause the game and Resume to continue playing.
 Click the Reset button to start a new game.
