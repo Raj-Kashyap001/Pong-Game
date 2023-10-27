@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pong Web Game: Home</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 class="game-title">Pong Game Classic</h1>
+    <a class="start-game-link" href="javascript:void(0)" id="start-button"
+      >Start</a
+    >
+    <button id="mute-button" onclick="toggleMute()" title="toggle audio">
+      🔇
+    </button>
+
+    <p class="copyright">©Raj Kashyap 2023</p>
+    <script>
+      const startButton = document.querySelector("#start-button");
+      const startBtnAudio = new Audio("./sounds/start-btn.mp3");
+      const backgroundMusic = new Audio("./sounds/game-bgm.mp3");
+      let isMuted = false;
+      let isBackgroundMusicPlaying = false;
+
+      function playBackgroundMusic() {
+        if (!isMuted && !isBackgroundMusicPlaying) {
+          backgroundMusic.loop = true;
+          backgroundMusic.play();
+          isBackgroundMusicPlaying = true;
+        }
+      }
+      startButton.addEventListener("click", () => {
+        if (!isMuted) {
+          startBtnAudio.play();
+        }
+
+        setTimeout(() => {
+          window.location.href = "game-screen.html";
+        }, startBtnAudio.duration * 1000);
+      });
+
+      function toggleMute() {
+        if (isMuted) {
+          backgroundMusic.muted = false;
+          isMuted = false;
+          document.getElementById("mute-button").textContent = "🔊";
+          playBackgroundMusic();
+        } else {
+          backgroundMusic.muted = true;
+          isMuted = true;
+          document.getElementById("mute-button").textContent = "🔇";
+          isBackgroundMusicPlaying = false;
+        }
+      }
+      playBackgroundMusic();
+    </script>
+  </body>
+</html>

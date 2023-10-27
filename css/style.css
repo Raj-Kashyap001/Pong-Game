@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+:root {
+  --primary-blue: hsl(222, 100%, 35%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/img/background.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.game-title {
+  text-align: center;
+  font-family: "Press Start 2P", "Courier New", Courier, monospace;
+  font-size: 2.5rem;
+}
+
+.start-game-link {
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  border: none;
+  background: var(--primary-blue);
+  box-shadow: 0 0 25px var(--primary-blue);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.start-game-link:hover {
+  box-shadow: 0 0 5px var(--primary-blue), 0 0 25px var(--primary-blue),
+    0 0 50px var(--primary-blue), 0 0 100px var(--primary-blue);
+}
+
+#mute-button {
+  position: absolute;
+  padding: 10px;
+  font-size: 1.6rem;
+  top: 30px;
+  right: 30px;
+  border: none;
+  background: transparent;
+}
+
+.copyright {
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
