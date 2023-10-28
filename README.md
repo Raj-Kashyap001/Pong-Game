@@ -8,11 +8,7 @@
   <a href="https://raj-kashyap001.github.io/Pong-Game/"><strong>Play the Game</strong></a>
 </p>
 
-<<<<<<< HEAD
 Pong Game Screenshot <img src="screenshot.png">
-=======
-![Pong Game Screenshot](screenshot.png)
->>>>>>> 2e3197a46ada7ca4e746de11de0f6147454f6141
 
 ## Table of Contents
 
@@ -47,8 +43,10 @@ To run this game locally, you need a modern web browser.
 ### Installation
 
 1. Clone the repository
+
    ```sh
    git clone https://github.com/Raj-Kashyap001/Pong-Game.git
+
 Open index.html in your web browser.
 
 Enjoy playing Pong!
@@ -80,5 +78,3 @@ Push to the Branch (git push origin feature/AmazingFeature).
 Open a Pull Request.
 License
 Distributed under the MIT License. See LICENSE for more information.
-
-
