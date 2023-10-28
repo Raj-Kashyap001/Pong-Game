@@ -8,7 +8,7 @@
   <a href="https://raj-kashyap001.github.io/Pong-Game/"><strong>Play the Game</strong></a>
 </p>
 
-![Pong Game Screenshot](/img/screenshot.png)
+Pong Game Screenshot <img src="screenshot.png">
 
 ## Table of Contents
 
@@ -77,5 +77,4 @@ Open a Pull Request.
 License
 Distributed under the MIT License. See LICENSE for more information.
 
-</details>
-```
+
