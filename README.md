@@ -4,9 +4,6 @@
   A classic web-based Pong game implemented with HTML, CSS, and JavaScript.
 </p>
 
-<p align="center">
-  <a href="https://raj-kashyap001.github.io/Pong-Game/"><strong>Play the Game</strong></a>
-</p>
 
 Pong Game Screenshot <img src="screenshot.png">
 
