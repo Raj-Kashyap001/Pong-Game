@@ -8,7 +8,11 @@
   <a href="https://raj-kashyap001.github.io/Pong-Game/"><strong>Play the Game</strong></a>
 </p>
 
+<<<<<<< HEAD
 Pong Game Screenshot <img src="screenshot.png">
+=======
+![Pong Game Screenshot](screenshot.png)
+>>>>>>> 2e3197a46ada7ca4e746de11de0f6147454f6141
 
 ## Table of Contents
 
